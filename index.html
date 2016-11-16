@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Software and Website Developer In Cikarang">
+    <meta name="author" content="Hakko Bio Richard">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Cover Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+    <script type="text/javascript">
+    var counter = 10;
+    function countDown()
+    {
+        if(counter>=0)
+        {
+            document.getElementById("timer").innerHTML = counter;
+        }
+        else
+        {
+            download();
+            return;
+        }
+        counter -= 1; 
+
+        var counter2 = setTimeout("countDown()",1000);
+        return;
+    }
+    function download()
+    {
+        document.getElementById("link").innerHTML = "<a href='http://niqoweb.com/portofolio.htm' class='btn btn-lg btn-secondary'> My Portofolio</a>";
+    }
+   </script>
+  </head>
+
+  <body onload="countDown();">
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">My Profile</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link active" href="http://www.hakkoblogs.com">Blog</a>
+                <a class="nav-link" href="https://www.facebook.com/accho.blues">Facebook</a>
+                <a class="nav-link" href="https://github.com/acchoblues">GitHub</a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+<img src="hakko.jpg" style="border: 4px solid whitesmoke; border-radius: 50%;" height="200" width="200" />
+            <h1 class="cover-heading">Hakko Bio Richard</h1>
+            <p class="lead">Software & Web Developer</p>
+            <p>Programming As Java, PHP, MySQL, Bootstrap and More</p>
+            <span id="timer"></span>
+            <p class="lead">
+              <span id="link"></span>
+            </p> 
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Made With <span style="color: #e74c3c">&hearts; </span> in <a href="https://hakkoblogs.com">Cikarang</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
